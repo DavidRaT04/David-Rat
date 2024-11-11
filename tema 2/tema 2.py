@@ -1,5 +1,9 @@
-text="""(Muzeul Județean de Artă Centrul Artistic Baia Mare vă invită la un eveniment muzical în cadrul căruia ritmul, armonia și improvizația din jazz vor rezona din nou alături de compozițiile picturale, unde liniile, culorile și formele se vor alătura muzicii într-un dialog creativ inedit."""
-print (text)
-text_1=text [0:len(text)//2]
-text_2=text [len(text)//2:]
->>>
+sir="Încălzirea globală este fenomenul de creștere continuă a temperaturilor medii înregistrate ale atmosferei în imediata apropiere a solului, precum și a apei oceanelor, constatată în ultimele două secole, dar mai ales în ultimele decenii."
+mijloc=len(sir)//2
+partea1=sir[:mijloc]
+partea2=sir[mijloc:]
+partea1.strip()
+partea2=partea2[::-1]
+partea2=partea2.replace(',',' ')
+partea2=partea2.replace('.',' ')
+print(partea1.upper()+partea2.capitalize())
